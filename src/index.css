@@ -1,7 +1,3 @@
-.active {
-  background-color: #000;
-  color: #fff;
-}
 
 body{
   background-color: #f6fcff;
@@ -47,7 +43,7 @@ form {
 label{
   display: flex;
   flex-direction: column;
-  margin-bottom: 1px;
+  margin-bottom: 1em;
 }
 
 label span {
