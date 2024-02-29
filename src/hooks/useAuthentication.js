@@ -5,7 +5,7 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     updateProfile,
-    signOut
+    signOut,
 } from 'firebase/auth'
 
 import { useState, useEffect } from 'react'
@@ -16,7 +16,6 @@ export const useAuthentication = () => {
 
     //cleanup - deal with memory leak
     const [cancelled, setCancelled] = useState(false)  //zerar as açoes futuras do componente
-
     const auth = getAuth()
 
     function checkIfIsCancelled(){
@@ -25,6 +24,7 @@ export const useAuthentication = () => {
         }
     }
 
+    //register
     const createUser = async (data) => {
         checkIfIsCancelled()
         
@@ -35,7 +35,7 @@ export const useAuthentication = () => {
             const {user} = await createUserWithEmailAndPassword(
                 auth,
                 data.email,
-                data.password
+                data.password,
             )
 
             await updateProfile(user, {
@@ -64,8 +64,37 @@ export const useAuthentication = () => {
                 setLoading(false)
                 setError(systemErrorMessage)
         }
+    }
 
-    
+    //logout 
+    const logout = () => {
+        checkIfIsCancelled()
+        signOut(auth)
+    }
+
+    //login
+    const login = async (data) => {
+        checkIfIsCancelled()
+        setLoading(true)
+        setError(false)
+
+        try {
+            await signInWithEmailAndPassword(auth, data.email, data.password);
+            setLoading(false)
+        } catch (error) {
+            let systemErrorMessage;
+
+            if (error.message.includes("user-not-found")) {
+                systemErrorMessage = "Usuário não encontrado."
+            } else if (error.message.includes("wrong-password")){
+                systemErrorMessage = "Senha incorreta."
+            } else {
+                systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde."
+            }
+
+            setError(systemErrorMessage)
+            setLoading(false)
+        }
     }
 
     useEffect(() => {
@@ -77,6 +106,8 @@ export const useAuthentication = () => {
         createUser,
         error,
         loading,
+        logout,
+        login,
     }
 
 }
