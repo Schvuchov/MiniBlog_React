@@ -16,7 +16,7 @@ const CreatePost = () => {
     }
 
     return(
-        <div>
+        <div className={styles.create_post}>
             <h2>Criar post</h2>
             <p>Escreva sobre o que quiser e compartilhe o seu conhecimento</p>
             <form onSubmit={handleSubmit}>
@@ -63,6 +63,10 @@ const CreatePost = () => {
                         value={tags}
                     />
                 </label>
+                {!loading && <button className="btn">Cadastrar</button>}
+                {loading && <button className="btn" disabled>Aguarde...</button>}
+            
+                {error && <p className="error"> {error} </p>}
             </form>
         </div>
     )
