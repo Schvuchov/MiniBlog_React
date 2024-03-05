@@ -19,3 +19,8 @@ MiniBlog sendo desenvolvido em React (Router, Hooks, Context, Firebase, Autentic
   - Função de logout
   - Estruturando página de login
   - Login de usuário
+  - Estrutura da página de criar post
+  - Função de criar post
+  - Inserindo dados no Firebase
+  - Validação dos dados
+  - Estruturando a home
