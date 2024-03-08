@@ -24,3 +24,6 @@ MiniBlog sendo desenvolvido em React (Router, Hooks, Context, Firebase, Autentic
   - Inserindo dados no Firebase
   - Validação dos dados
   - Estruturando a home
+  - Hook de resgate de dados
+  - Exibindo posts na home
+  - CSS dos detalhes do post
