@@ -1,5 +1,11 @@
 import styles from './Dashboard.module.css'
 
+import { Link } from 'react-router-dom'
+
+//hooks
+import {useAuthValue} from "../../context/AuthContext"
+import {useFetchDocuments} from "../../hooks/useFetchDocuments"
+
 const Dashboard = () => {
     return(
         <div>
