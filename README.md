@@ -28,3 +28,7 @@ MiniBlog sendo desenvolvido em React (Router, Hooks, Context, Firebase, Autentic
   - Exibindo posts na home
   - CSS dos detalhes do post
   - Criando funcionalidade de busca
+  - Exibindo resultados da busca
+  - Criando página de post individular
+  - Exibindo post individual
+  - CSS da página de post individual
