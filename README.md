@@ -32,3 +32,10 @@ MiniBlog sendo desenvolvido em React (Router, Hooks, Context, Firebase, Autentic
   - Criando página de post individular
   - Exibindo post individual
   - CSS da página de post individual
+  - Estruturando dashboard
+  - Exibindo posts do usuário na dashboard
+  - Concluindo estrutura da dashboard
+  - CSS da dashboard
+  - Excluindo post
+  - Criando página de edição
+  - Atualizando post
