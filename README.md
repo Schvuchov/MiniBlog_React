@@ -40,4 +40,5 @@ MiniBlog sendo desenvolvido em React (Router, Hooks, Context, Firebase, Autentic
   - Criando página de edição
   - Atualizando post
 
-  - Alterar a estilização para finalizar
+  
+   Alterar a estilização para finalizar
