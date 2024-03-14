@@ -7,10 +7,11 @@
 
 .search_form{
     max-width: 100%;
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+    margin: 10px;
+    margin-bottom: 30px;
 }
 
 .search_form input{
