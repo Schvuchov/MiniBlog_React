@@ -42,3 +42,7 @@ MiniBlog sendo desenvolvido em React (Router, Hooks, Context, Firebase, Autentic
 
   
    Alterar a estilização para finalizar
+
+![image](https://github.com/Schvuchov/MiniBlog_React/assets/86387013/9ac70d4e-3631-4619-ba26-f199bf60a787)
+![image](https://github.com/Schvuchov/MiniBlog_React/assets/86387013/a29ba4f3-012e-4364-84ab-65c053ec2987)
+
