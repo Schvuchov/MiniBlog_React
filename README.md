@@ -2,7 +2,10 @@
 
 MiniBlog básico desenvolvido em React.js usando Router, Hooks, Context, Firebase, Autenticação entre outros.
 
-## teste através do link https://schvuchov.github.io/MiniBlog_React/
+## Teste usando o link:
+https://schvuchov.github.io/MiniBlog_React/
+
+### Conteúdo 
 
   - Setup do Firebase
   - Integrando Firebase ao React
